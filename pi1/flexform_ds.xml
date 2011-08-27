@@ -1,0 +1,77 @@
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+  </meta>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:ws_facebook/pi1/locallang.xml:pi_flexform.sheet_main</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <facebook>
+            <TCEforms>
+              <label>LLL:EXT:ws_facebook/pi1/locallang.xml:pi_flexform.sheet_main.facebook account</label>
+              <config>
+                <type>input</type>
+                <size>60</size>
+                <max>120</max>
+                <eval>trim,required</eval>
+                <default></default>
+              </config>
+            </TCEforms>
+          </facebook>
+          <apiId>
+            <TCEforms>
+              <label>LLL:EXT:ws_facebook/pi1/locallang.xml:pi_flexform.sheet_main.apiId</label>
+              <config>
+                <type>input</type>
+                <size>60</size>
+                <max>120</max>
+                <eval>required</eval>
+                <default></default>
+              </config>
+            </TCEforms>
+          </apiId>
+          <secret>
+            <TCEforms>
+              <label>LLL:EXT:ws_facebook/pi1/locallang.xml:pi_flexform.sheet_main.secret</label>
+              <config>
+                <type>input</type>
+                <size>60</size>
+                <max>120</max>
+                <eval>required</eval>
+                <default></default>
+              </config>
+            </TCEforms>
+          </secret>
+          <iconLink>
+            <TCEforms>
+              <label>LLL:EXT:ws_facebook/pi1/locallang.xml:pi_flexform.sheet_main.iconLink</label>
+              <config>
+                <type>input</type>
+                <eval>trim</eval>
+                <default></default>
+                <wizards type="array">
+                  <_PADDING>2</_PADDING>
+                  <link type="array">
+                    <type>popup</type>
+                    <title>Link</title>
+                    <icon>link_popup.gif</icon>
+                    <script>browse_links.php?mode=wizard&amp;act=file</script>
+                    <params type="array">
+                      <blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+                      <allowedExtensions>gif,png,jpg,jpeg</allowedExtensions>
+                    </params>
+                    <JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+                  </link>
+                </wizards>
+              </config>
+            </TCEforms>
+          </iconLink>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>
