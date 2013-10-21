@@ -109,7 +109,7 @@ class tx_wsfacebook_pi1 extends tslib_pibase {
           $iconLink = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'iconLink');
         }
         else {
-          $iconLink = t3lib_extMgm::extRelPath ('facebook') . 'pi1/res/up-link.gif';
+          $iconLink = t3lib_extMgm::extRelPath ('ws_facebook') . 'pi1/res/up-link.gif';
         }
         // make the urls hyper links
         foreach($url[0] as $urlItem){
